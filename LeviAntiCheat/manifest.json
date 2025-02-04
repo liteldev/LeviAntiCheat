@@ -1,7 +1,7 @@
 {
     "name": "LeviAntiCheat",
     "entry": "LeviAntiCheat.dll",
-    "version": "0.4.0",
+    "version": "0.4.1",
     "type": "native",
     "description": "Lightweight anti-cheating for LeviLamina",
     "author": "LiteLDev"
