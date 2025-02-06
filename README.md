@@ -65,7 +65,7 @@ lip install github.com/LiteLDev/LeviAntiCheat
 
 ### Secure
 
-- Prevent LoginFlood attack
+- Prevent login flood attack
 - Prevent bad packet
 
 ### World
