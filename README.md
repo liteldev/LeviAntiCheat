@@ -34,10 +34,10 @@ lip install github.com/LiteLDev/LeviAntiCheat
 - Prevent X-ray vision of minerals
 - Prevent Toolbox using
 - Prevent auto click
-- Prevent Reach
+- Prevent reach
 - Prevent fake name
 - Prevent spawn xp orbs packet
-- Prevent `xp` hack
+- Prevent xp hack
 
 ### Inventory
 
@@ -54,8 +54,8 @@ lip install github.com/LiteLDev/LeviAntiCheat
 
 - Prevent interacting with containers while moving
 - Prevent illegal movement such as fly, speed hack, wall hack
-- Prevent NoPacket
-- Prevent Timer(another type of speed hack by adjust client's speed)
+- Prevent no packet
+- Prevent timer(another type of speed hack by adjust client's speed)
 
 ### Interaction
 
@@ -66,7 +66,7 @@ lip install github.com/LiteLDev/LeviAntiCheat
 ### Secure
 
 - Prevent LoginFlood attack
-- Fix empty packet spam
+- Prevent bad packet
 
 ### World
 

@@ -66,7 +66,7 @@ lip install github.com/LiteLDev/LeviAntiCheat
 ### 安全
 
 - 防止Login泛洪攻击
-- 修复空包刷屏
+- 拦截弃用包
 
 ### 世界
 
@@ -307,4 +307,4 @@ lip install github.com/LiteLDev/LeviAntiCheat
 
 1. 反编译（de-compile）、反汇编（disassemble）和任何方式修改LeviAnticheat的全部或部分内容，或对LeviAntiCheat任何功能或程序进行反向工程（reverse engineering）。
 
-1. 出租、销售LeviAntiCheat。
+2. 出租、销售LeviAntiCheat。
