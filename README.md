@@ -67,6 +67,7 @@ lip install github.com/LiteLDev/LeviAntiCheat
 
 - Prevent login flood attack
 - Prevent bad packet
+- Block suspicious clients
 
 ### World
 
@@ -80,7 +81,7 @@ For X-Ray prevention, see [here](anti_x_ray.md).
 
 ```jsonc
 {
-    "version": 6,
+    "version": 9,
     "consoleLog": true,
     "worldSafety": {
         "fakeSeed": {
@@ -119,27 +120,27 @@ For X-Ray prevention, see [here](anti_x_ray.md).
                         "minecraft:coal_ore"
                     ],
                     "ReplacementBlocks": [
+                        "minecraft:diamond_ore",
                         "minecraft:raw_iron_block",
                         "minecraft:emerald_ore",
-                        "minecraft:diamond_ore",
+                        "minecraft:deepslate_diamond_ore",
                         "minecraft:deepslate_emerald_ore",
                         "minecraft:calcite",
                         "minecraft:oak_planks",
                         "minecraft:tuff",
-                        "minecraft:deepslate_diamond_ore",
                         "minecraft:coal_ore",
                         "minecraft:deepslate_coal_ore",
                         "minecraft:iron_ore",
                         "minecraft:deepslate_iron_ore",
                         "minecraft:amethyst_block",
                         "minecraft:andesite",
-                        "minecraft:budding_amethyst",
                         "minecraft:gravel",
+                        "minecraft:budding_amethyst",
                         "minecraft:deepslate",
-                        "minecraft:diorite",
                         "minecraft:smooth_basalt",
-                        "minecraft:dirt",
+                        "minecraft:diorite",
                         "minecraft:stone",
+                        "minecraft:dirt",
                         "minecraft:granite"
                     ],
                     "SolidBlocks": []
@@ -158,8 +159,8 @@ For X-Ray prevention, see [here](anti_x_ray.md).
                         "minecraft:netherrack"
                     ],
                     "SolidBlocks": [
-                        "minecraft:netherrack",
                         "minecraft:magma",
+                        "minecraft:netherrack",
                         "minecraft:blackstone",
                         "minecraft:basalt",
                         "minecraft:crimson_nylium",
@@ -175,31 +176,6 @@ For X-Ray prevention, see [here](anti_x_ray.md).
                     "HiddenBlocks": [],
                     "ReplacementBlocks": [],
                     "SolidBlocks": []
-                },
-                "nether(engine mode 2 or 3 example)": {
-                    "Enable": true,
-                    "EngineMode": 3,
-                    "UpdateRadius": 2.0,
-                    "MaxBlockHeight": 128,
-                    "HiddenBlocks": [
-                        "minecraft:ancient_debris",
-                        "minecraft:glowstone",
-                        "minecraft:bone_block",
-                        "minecraft:quartz_ore",
-                        "minecraft:magma_block",
-                        "minecraft:nether_bricks",
-                        "minecraft:nether_gold_ore",
-                        "minecraft:polished_blackstone_bricks"
-                    ],
-                    "ReplacementBlocks": [
-                        "minecraft:basalt",
-                        "minecraft:blackstone",
-                        "minecraft:gravel",
-                        "minecraft:soul_soil",
-                        "minecraft:netherrack",
-                        "minecraft:soul_sand"
-                    ],
-                    "SolidBlocks": []
                 }
             }
         },
@@ -207,7 +183,7 @@ For X-Ray prevention, see [here](anti_x_ray.md).
         "antiFakeName": false,
         "antiSpawnXpOrbs": true,
         "antiXpHack": true,
-        "antiBadPacket": true
+        "antiBadPacketHack": false
     },
     "bugFixes": {
         "uiItemDuplicateFix": true,
@@ -239,7 +215,7 @@ For X-Ray prevention, see [here](anti_x_ray.md).
         "antiSpam": {
             "enable": true,
             "maxChatLength": 300,
-            "maxRate": 5,
+            "maxRate": 2,
             "disableSelector": true
         },
         "itemNameLengthCheck": {
@@ -251,8 +227,7 @@ For X-Ray prevention, see [here](anti_x_ray.md).
         "illegalMovementCheck": {
             "enable": true,
             "maxMismatchDistance": 2.0,
-            "triggerReplayDistance": 3.0,
-            "detectLevel": 3
+            "detectLevel": 7
         },
         "timerCheck": {
             "enable": true,
@@ -261,23 +236,23 @@ For X-Ray prevention, see [here](anti_x_ray.md).
         },
         "noPacketCheck": {
             "enable": true,
-            "maxNoPacketTime": 10
+            "maxNoPacketTime": 12
         }
     },
     "combat": {
         "autoClickCheck": {
             "enable": true,
-            "maxCps": 10,
+            "maxCps": 15,
             "detectLevel": 10
         },
         "reachDistanceCheck": {
             "enable": true,
-            "detectLevel": 5
+            "detectLevel": 7
         }
     },
     "securityMeasures": {
-        "emptyPacketFix": true,
-        "loginFloodCheck": false
+        "loginFloodCheck": false,
+        "antiSuspiciousClient": true
     },
     "punish": {
         "enable": true,

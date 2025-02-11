@@ -67,6 +67,7 @@ lip install github.com/LiteLDev/LeviAntiCheat
 
 - 防止Login泛洪攻击
 - 拦截弃用包
+- 阻止可疑的客户端
 
 ### 世界
 
@@ -80,7 +81,7 @@ lip install github.com/LiteLDev/LeviAntiCheat
 
 ```jsonc
 {
-    "version": 5, // 配置文件版本
+    "version": 9, // 配置文件版本
     "consoleLog": true, // 是否在控制台记录日志
     "worldSafety": { // 世界安全配置
         "fakeSeed": { // 假种子配置
@@ -119,27 +120,27 @@ lip install github.com/LiteLDev/LeviAntiCheat
                         "minecraft:coal_ore"
                     ],
                     "ReplacementBlocks": [ // 替换的方块
+                        "minecraft:diamond_ore",
                         "minecraft:raw_iron_block",
                         "minecraft:emerald_ore",
-                        "minecraft:diamond_ore",
+                        "minecraft:deepslate_diamond_ore",
                         "minecraft:deepslate_emerald_ore",
                         "minecraft:calcite",
                         "minecraft:oak_planks",
                         "minecraft:tuff",
-                        "minecraft:deepslate_diamond_ore",
                         "minecraft:coal_ore",
                         "minecraft:deepslate_coal_ore",
                         "minecraft:iron_ore",
                         "minecraft:deepslate_iron_ore",
                         "minecraft:amethyst_block",
                         "minecraft:andesite",
-                        "minecraft:budding_amethyst",
                         "minecraft:gravel",
+                        "minecraft:budding_amethyst",
                         "minecraft:deepslate",
-                        "minecraft:diorite",
                         "minecraft:smooth_basalt",
-                        "minecraft:dirt",
+                        "minecraft:diorite",
                         "minecraft:stone",
+                        "minecraft:dirt",
                         "minecraft:granite"
                     ],
                     "SolidBlocks": [] // 实心方块
@@ -158,8 +159,8 @@ lip install github.com/LiteLDev/LeviAntiCheat
                         "minecraft:netherrack"
                     ],
                     "SolidBlocks": [ // 实心方块
-                        "minecraft:netherrack",
                         "minecraft:magma",
+                        "minecraft:netherrack",
                         "minecraft:blackstone",
                         "minecraft:basalt",
                         "minecraft:crimson_nylium",
@@ -175,31 +176,6 @@ lip install github.com/LiteLDev/LeviAntiCheat
                     "HiddenBlocks": [], // 隐藏的方块
                     "ReplacementBlocks": [], // 替换的方块
                     "SolidBlocks": [] // 实心方块
-                },
-                "nether(engine mode 2 or 3 example)": { // 下界（引擎模式2或3示例）
-                    "Enable": true, // 是否启用反透视
-                    "EngineMode": 3, // 引擎模式
-                    "UpdateRadius": 2.0, // 更新半径
-                    "MaxBlockHeight": 128, // 最大方块高度
-                    "HiddenBlocks": [ // 隐藏的方块
-                        "minecraft:ancient_debris",
-                        "minecraft:glowstone",
-                        "minecraft:bone_block",
-                        "minecraft:quartz_ore",
-                        "minecraft:magma_block",
-                        "minecraft:nether_bricks",
-                        "minecraft:nether_gold_ore",
-                        "minecraft:polished_blackstone_bricks"
-                    ],
-                    "ReplacementBlocks": [ // 替换的方块
-                        "minecraft:basalt",
-                        "minecraft:blackstone",
-                        "minecraft:gravel",
-                        "minecraft:soul_soil",
-                        "minecraft:netherrack",
-                        "minecraft:soul_sand"
-                    ],
-                    "SolidBlocks": [] // 实心方块
                 }
             }
         },
@@ -207,7 +183,7 @@ lip install github.com/LiteLDev/LeviAntiCheat
         "antiFakeName": false, // 是否启用反假名
         "antiSpawnXpOrbs": true, // 是否启用反生成经验球
         "antiXpHack": true, // 是否启用反经验值作弊
-        "antiBadPacket": true // 是否启用反坏数据包
+        "antiBadPacketHack": false // 是否启用反坏数据包
     },
     "bugFixes": { // Bug 修复配置
         "uiItemDuplicateFix": true, // UI物品复制修复
@@ -239,7 +215,7 @@ lip install github.com/LiteLDev/LeviAntiCheat
         "antiSpam": { // 反垃圾信息
             "enable": true, // 是否启用反垃圾信息
             "maxChatLength": 300, // 最大聊天长度
-            "maxRate": 5, // 最大发送速率
+            "maxRate": 2, // 最大发送速率
             "disableSelector": true // 禁用选择器
         },
         "itemNameLengthCheck": { // 物品名称长度检查
@@ -251,8 +227,7 @@ lip install github.com/LiteLDev/LeviAntiCheat
         "illegalMovementCheck": { // 非法移动检测
             "enable": true, // 是否启用非法移动检测
             "maxMismatchDistance": 2.0, // 最大不匹配距离
-            "triggerReplayDistance": 3.0, // 触发回放距离
-            "detectLevel": 2 // 检测级别
+            "detectLevel": 7 // 检测级别
         },
         "timerCheck": { // 变速齿轮检测
             "enable": true, // 是否启用变速齿轮检测
@@ -261,23 +236,23 @@ lip install github.com/LiteLDev/LeviAntiCheat
         },
         "noPacketCheck": { // 无数据包检测
             "enable": true, // 是否启用无数据包检测
-            "maxNoPacketTime": 10 // 最大无数据包时间
+            "maxNoPacketTime": 12 // 最大无数据包时间
         }
     },
     "combat": { // 战斗检测
         "autoClickCheck": { // 自动点击检测
             "enable": true, // 是否启用自动点击检测
-            "maxCps": 10, // 最大每秒点击次数
+            "maxCps": 15, // 最大每秒点击次数
             "detectLevel": 10 // 检测级别
         },
         "reachDistanceCheck": { // 攻击距离检测
             "enable": true, // 是否启用攻击距离检测
-            "detectLevel": 5 // 检测级别
+            "detectLevel": 7 // 检测级别
         }
     },
     "securityMeasures": { // 安全措施
-        "emptyPacketFix": true, // 空包刷屏修复
-        "loginFloodCheck": false // 登录洪流检测
+        "loginFloodCheck": false, // 登录洪流检测
+        "antiSuspiciousClient": true // 阻止可疑的客户端
     },
     "punish": { // 惩罚配置
         "enable": true, // 是否启用惩罚
