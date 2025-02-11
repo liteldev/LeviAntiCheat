@@ -22,5 +22,15 @@
     "Warning: don't use cheats!": "Attention : n'utilisez pas les triches !",
     "{0} has been muted for {1}": "{0} a été rendu muet pour {1}",
     "{0} has been kicked for {1}": "{0} a été éjecté pour {1}",
-    "{0} has been banned for {1}": "{0} a été banni pour {1}"
+    "{0} has been banned for {1}": "{0} a été banni pour {1}",
+    "You have been muted": {
+        "": "Vous avez été muet."
+    },
+    "Error occurred in {0}": "Une erreur s'est produite dans {0}",
+    "Player {0} is banned:\nReason: {1}\nDeny time: {2}\nPardon time: {3}": "Le joueur {0} est banni :\nRaison : {1}\nTemps de refus : {2}\nTemps de pardon : {3}",
+    "Player {0} is muted until {1}": "Le joueur {0} est muet jusqu'à {1}",
+    "Player {0} is not banned or muted": "Le joueur {0} n'est pas banni ou muet",
+    "Failed to unmute {0} because the player hasn't been muted": "Impossible de réactiver {0} car le joueur n'a pas été muet",
+    "Player {0} has been unmuted": "Le joueur {0} a été rendu muet",
+    "Player {0} has been muted for {1} minutes": "Le joueur {0} a été rendu muet pendant {1} minutes"
 }

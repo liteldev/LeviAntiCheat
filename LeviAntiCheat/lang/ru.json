@@ -22,5 +22,15 @@
     "Warning: don't use cheats!": "Внимание: не используйте читы!",
     "{0} has been muted for {1}": "{0} был заглушен за {1}",
     "{0} has been kicked for {1}": "{0} был кикнут за {1}",
-    "{0} has been banned for {1}": "{0} был забанен на {1}"
+    "{0} has been banned for {1}": "{0} был забанен на {1}",
+    "You have been muted": {
+        "": "Вас заблокировали."
+    },
+    "Error occurred in {0}": "Произошла ошибка в {0}",
+    "Player {0} is banned:\nReason: {1}\nDeny time: {2}\nPardon time: {3}": "Игрок {0} забанен:\nПричина: {1}\nВремя отказа: {2}\nВремя Пардона: {3}",
+    "Player {0} is muted until {1}": "{0} заглушен до {1}",
+    "Player {0} is not banned or muted": "Игрок {0} не забанен или не заглушен",
+    "Failed to unmute {0} because the player hasn't been muted": "Не удалось включить звук {0} , потому что игрок не был заблокирован",
+    "Player {0} has been unmuted": "Игрок {0} был размучен",
+    "Player {0} has been muted for {1} minutes": "Player {0} has been muted for {1} minutes"
 }

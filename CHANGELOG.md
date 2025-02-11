@@ -5,6 +5,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.4] - 2025-02-12
+
+### Added
+
+- Added mute/unmute command
+- Added `reachDistance` and `reachDistanceCreative` in configuration file
+
+### Changed
+
+- Optimized command player parameter
+
+### Fixed
+
+- Fixed command spam in console
+- Fixed AntiXray nullptr error
+- Fixed AntiBadPacket [#25]
+- Fixed attack related detection not working since 0.4.0
+
 ## [0.4.3] - 2025-02-11
 
 ### Added
@@ -276,7 +294,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#12]: https://github.com/LiteLDev/LeviAntiCheat/issues/12
 [#23]: https://github.com/LiteLDev/LeviAntiCheat/issues/23
 [#24]: https://github.com/LiteLDev/LeviAntiCheat/issues/24
+[#25]: https://github.com/LiteLDev/LeviAntiCheat/issues/25
 
+[0.4.4]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.4.3...v0.4.4
 [0.4.3]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.4.2...v0.4.3
 [0.4.2]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.4.1...v0.4.2
 [0.4.1]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.4.0...v0.4.1

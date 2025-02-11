@@ -22,5 +22,15 @@
     "Warning: don't use cheats!": "警告: 不要作弊！",
     "{0} has been muted for {1}": "{0} 已 {1} 因为被禁言",
     "{0} has been kicked for {1}": "{0} 已因为 {1} 被踢出",
-    "{0} has been banned for {1}": "{0} 已因为 {1} 被封禁"
+    "{0} has been banned for {1}": "{0} 已因为 {1} 被封禁",
+    "You have been muted": {
+        "": "您已被禁言。"
+    },
+    "Error occurred in {0}": "错误发生在 {0}",
+    "Player {0} is banned:\nReason: {1}\nDeny time: {2}\nPardon time: {3}": "玩家 {0} 被封禁:\n原因: {1}\n封禁时间: {2}\n解封时间: {3}",
+    "Player {0} is muted until {1}": "玩家 {0} 被禁言直到 {1}",
+    "Player {0} is not banned or muted": "玩家 {0} 未被封禁或禁言",
+    "Failed to unmute {0} because the player hasn't been muted": "解除禁言 {0} 失败，因为该玩家未被禁言",
+    "Player {0} has been unmuted": "玩家 {0} 已被解除禁言",
+    "Player {0} has been muted for {1} minutes": "玩家 {0} 已被禁言 {1} 分钟"
 }

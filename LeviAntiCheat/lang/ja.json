@@ -22,5 +22,15 @@
     "Warning: don't use cheats!": "警告: チートを使用しないでください!",
     "{0} has been muted for {1}": "{0} は {1} の間ミュートされました",
     "{0} has been kicked for {1}": "{0} は {1} のためにキックされました",
-    "{0} has been banned for {1}": "{0} は {1} に対してBANされました"
+    "{0} has been banned for {1}": "{0} は {1} に対してBANされました",
+    "You have been muted": {
+        "": "ミュートされました。"
+    },
+    "Error occurred in {0}": "{0} でエラーが発生しました",
+    "Player {0} is banned:\nReason: {1}\nDeny time: {2}\nPardon time: {3}": "プレイヤー {0} は禁止されています:\n理由: {1}\n拒否時間: {2}\nパルドン時間: {3}",
+    "Player {0} is muted until {1}": "{0} は {1}までミュートされています",
+    "Player {0} is not banned or muted": "{0} はBANされていないかミュートされていません",
+    "Failed to unmute {0} because the player hasn't been muted": "プレイヤーがミュートされていないため、 {0} のミュート解除に失敗しました",
+    "Player {0} has been unmuted": "プレイヤー {0} のミュートを解除しました",
+    "Player {0} has been muted for {1} minutes": "プレイヤー {0} は {1} 分間ミュートされました"
 }
