@@ -274,6 +274,13 @@ Ask questions by creating an issue.
 
 Since this project is closed source, you can't contribute to the code directly. But if you have great ideas or suggestions, please feel free to contact us.
 
+## Used Projectes
+
+| Project          | License    | Link                                         |
+| ---------------- | ---------- | -------------------------------------------- |
+| parallel-hashmap | Apache-2.0 | https://github.com/greg7mdp/parallel-hashmap |
+| libhat           | MIT        | https://github.com/BasedInc/libhat           |
+
 ## License
 
 Copyright © LiteLDev

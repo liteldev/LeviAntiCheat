@@ -274,6 +274,13 @@ lip install github.com/LiteLDev/LeviAntiCheat
 
 由于该项目是闭源的，您无法直接对代码进行贡献。但是如果你有很棒的点子或想法，欢迎与我们联系。
 
+## 使用的开源项目
+
+| Project          | License    | Link                                         |
+| ---------------- | ---------- | -------------------------------------------- |
+| parallel-hashmap | Apache-2.0 | https://github.com/greg7mdp/parallel-hashmap |
+| libhat           | MIT        | https://github.com/BasedInc/libhat           |
+
 ## 许可证
 
 版权所有 © LiteLDev
