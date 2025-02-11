@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.3] - 2025-02-11
+
+### Added
+
+- Added SusClientEvent
+
 ## [0.4.2] - 2025-02-10
 
 ### Added
@@ -271,6 +277,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#23]: https://github.com/LiteLDev/LeviAntiCheat/issues/23
 [#24]: https://github.com/LiteLDev/LeviAntiCheat/issues/24
 
+[0.4.3]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.4.2...v0.4.3
 [0.4.2]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.4.1...v0.4.2
 [0.4.1]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.4.0...v0.4.1
 [0.4.0]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.4.0-rc.11...v0.4.0
