@@ -84,7 +84,7 @@ For X-Ray prevention, see [here](anti_x_ray.md).
 
 ```jsonc
 {
-    "version": 9,
+    "version": 10,
     "consoleLog": true,
     "worldSafety": {
         "fakeSeed": {
@@ -186,7 +186,7 @@ For X-Ray prevention, see [here](anti_x_ray.md).
         "antiFakeName": false,
         "antiSpawnXpOrbs": true,
         "antiXpHack": true,
-        "antiBadPacketHack": false
+        "antiBadPacket": true
     },
     "bugFixes": {
         "uiItemDuplicateFix": true,
@@ -218,7 +218,9 @@ For X-Ray prevention, see [here](anti_x_ray.md).
         "antiSpam": {
             "enable": true,
             "maxChatLength": 300,
-            "maxRate": 2,
+            "maxCmdRate": 2, // Maximum command executing rate in 1 second
+            "chatRateDuration": 10, // Chat rate check duration, in seconds
+            "maxChatRate": 5, // Maximum chat rate in chatRateDuration seconds
             "disableSelector": true
         },
         "itemNameLengthCheck": {
@@ -245,11 +247,13 @@ For X-Ray prevention, see [here](anti_x_ray.md).
     "combat": {
         "autoClickCheck": {
             "enable": true,
-            "maxCps": 15,
+            "maxCps": 12,
             "detectLevel": 10
         },
         "reachDistanceCheck": {
             "enable": true,
+            "reachDistance": 3.200000047683716,
+            "reachDistanceCreative": 5.300000190734863,
             "detectLevel": 7
         }
     },

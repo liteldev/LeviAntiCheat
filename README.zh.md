@@ -84,7 +84,7 @@ lip install github.com/LiteLDev/LeviAntiCheat
 
 ```jsonc
 {
-    "version": 9, // 配置文件版本
+    "version": 10, // 配置文件版本
     "consoleLog": true, // 是否在控制台记录日志
     "worldSafety": { // 世界安全配置
         "fakeSeed": { // 假种子配置
@@ -186,7 +186,7 @@ lip install github.com/LiteLDev/LeviAntiCheat
         "antiFakeName": false, // 是否启用反假名
         "antiSpawnXpOrbs": true, // 是否启用反生成经验球
         "antiXpHack": true, // 是否启用反经验值作弊
-        "antiBadPacketHack": false // 是否启用反坏数据包
+        "antiBadPacket": true // 是否启用反坏数据包
     },
     "bugFixes": { // Bug 修复配置
         "uiItemDuplicateFix": true, // UI物品复制修复
@@ -218,7 +218,9 @@ lip install github.com/LiteLDev/LeviAntiCheat
         "antiSpam": { // 反垃圾信息
             "enable": true, // 是否启用反垃圾信息
             "maxChatLength": 300, // 最大聊天长度
-            "maxRate": 2, // 最大发送速率
+            "maxCmdRate": 2, // 一秒钟内最高指令速率
+            "chatRateDuration": 10, // 聊天速率检查间隔，以秒为单位
+            "maxChatRate": 5, // chatRateDuration秒内最高聊天速率
             "disableSelector": true // 禁用选择器
         },
         "itemNameLengthCheck": { // 物品名称长度检查
@@ -245,11 +247,13 @@ lip install github.com/LiteLDev/LeviAntiCheat
     "combat": { // 战斗检测
         "autoClickCheck": { // 自动点击检测
             "enable": true, // 是否启用自动点击检测
-            "maxCps": 15, // 最大每秒点击次数
+            "maxCps": 12, // 最大每秒点击次数
             "detectLevel": 10 // 检测级别
         },
         "reachDistanceCheck": { // 攻击距离检测
             "enable": true, // 是否启用攻击距离检测
+            "reachDistance": 3.200000047683716, // 除创造模式外最大攻击范围
+            "reachDistanceCreative": 5.300000190734863, // 创造模式最大攻击范围
             "detectLevel": 7 // 检测级别
         }
     },
