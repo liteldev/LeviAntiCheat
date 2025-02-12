@@ -17,6 +17,9 @@ lip install github.com/LiteLDev/LeviAntiCheat
 
 `/lac ban <Player> [reason] [duration(minute)]` Ban a player manually  
 `/lac unban <Player>` Pardon a player manually  
+`/lac mute <Player> [duration(minute)]` Mute a player mamually  
+`/lac unmute <Player>` Unmute a player mamually  
+`/lac query <Player>` Query a player's status  
 `/lac reload` Reload the configuration file
 
 ## Features
