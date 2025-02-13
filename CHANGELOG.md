@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.5] - 2025-02-13
+
+### Fixed
+
+- Fixed NoPacket detection when server thread is blocked
+- Fixed some functions not working after reloading configuration
+
 ## [0.4.4] - 2025-02-12
 
 ### Added
@@ -296,6 +303,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#24]: https://github.com/LiteLDev/LeviAntiCheat/issues/24
 [#25]: https://github.com/LiteLDev/LeviAntiCheat/issues/25
 
+[0.4.5]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.4.4...v0.4.5
 [0.4.4]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.4.3...v0.4.4
 [0.4.3]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.4.2...v0.4.3
 [0.4.2]: https://github.com/LiteLDev/LeviAntiCheat/compare/v0.4.1...v0.4.2
